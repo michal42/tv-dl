@@ -90,7 +90,7 @@ class PrimaEngine:
             baseUrl = baseUrl.replace("token", "token_"+str(zoneGEO))
 
         return ("rtmp", playpath[:-3]+'flv' , { 'url' : baseUrl+'/'+playpath,
-                                     'rtmpdump_args' : '--live'})
+                                     'rtmpdump_args' : ['--live']})
     
     def download_cdn(self):
         cdnId = re.findall(r"cdnID=(\d+)", self.page)[0]

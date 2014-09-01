@@ -43,4 +43,4 @@ LiveboxPlayer\.init\(\'embed\_here\_\d+\'\,\ \'295\'\,\'183\'\,\ \'(.*?)\'\,\ \'
         
         filename = self.movielist[movie][2] if quality == 'low' else self.movielist[movie][1]
         
-        return ('rtmp', filename, {'url' : rtmp+'/'+filename, 'rtmpdump_args' : '--live'} )
+        return ('rtmp', filename, {'url' : rtmp+'/'+filename, 'rtmpdump_args' : ['--live']} )

@@ -22,7 +22,7 @@ class DummyEngine:
         return ('rtmp', 'output.flv', {'url' : 'rtmp://server.net:port/appname/playpath',
                                        'playpath' : 'opravdu/divnej/playpath',
                                        'app' : 'opravdu/divná/aplikace',
-                                       'rtmpdump_args' : '--live',
+                                       'rtmpdump_args' : ['--live'],
                                        'token' : 'bezpečnostní_kód'} )
         
         return ('http', 'output.flv', {'url' : 'http://televize.tv/archiv/porad.flv' } )

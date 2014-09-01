@@ -139,7 +139,7 @@ class CtEngine:
         app = parsedurl.path[1:] + '?' + parsedurl.query
 
         # rtmpdump --live kvůli restartům - viz http://www.abclinuxu.cz/blog/pb/2011/5/televize-9-ctstream-3#18
-        return ('rtmp', filename, { 'url': base, 'playpath': src, 'app' : app, 'rtmpdump_args' : '--live'} )
+        return ('rtmp', filename, { 'url': base, 'playpath': src, 'app' : app, 'rtmpdump_args' : ['--live']} )
         
     def download_srt(self):
         if self.subtitles is None:

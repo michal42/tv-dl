@@ -93,5 +93,5 @@ class NovaEngine:
 
         return ("rtmp", filename , { 'url' : baseUrl,
                                     'playpath' : playpath,
-                                    'rtmpdump_args' : '--live'})
+                                    'rtmpdump_args' : ['--live']})
 
